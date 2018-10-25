@@ -1,0 +1,33 @@
+name: azml
+channels:
+ - conda-forge
+ - pytorch
+dependencies:
+  - python=3.6
+  - numpy
+  - pyyaml
+  - scipy
+  - ipython
+  - pandas
+  - jupyter
+  - ipykernel
+  - scikit-learn
+  - pillow
+  - matplotlib
+  - seaborn
+  - scikit-image
+  - pytorch
+  - pip:
+    - torchvision
+    - tqdm
+    - gitpython
+    - kaggle 
+    - papermill
+    - fire
+    - pydot
+    - "--editable=git+https://github.com/szagoruyko/pytorchviz#egg=pytorchviz"
+    - tensorflow # Required by tensorboard
+    - tensorboard
+    - tensorboardX
+    - jupytext
+    - azureml-sdk[notebooks, automl]
